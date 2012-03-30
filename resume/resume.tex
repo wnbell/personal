@@ -1,0 +1,128 @@
+\documentclass[margin,line]{res}
+
+\usepackage{pdfpages}
+%\usepackage{helvetica}
+
+\usepackage[colorlinks=false]{hyperref}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+
+\begin{document}
+
+\vspace*{-1.75cm}
+\name{Nathan Bell \vspace*{.1in}}
+
+\begin{resume}
+\section{\sc Contact Information}
+\vspace{.05in}
+\begin{tabular}{@{}l|l|l}
+(239) 410-4550 & \texttt{wnbell@gmail.com} & \url{http://wnbell.com} \\
+\end{tabular}
+
+\small
+\section{\sc Professional Interests}
+Generic programming, high-level libraries, sparse linear algebra, fine-grained parallelism
+
+\section{\sc Education}
+{\bf University of Illinois Urbana-Champaign}, Urbana, Illinois\\
+Ph.D., Computer Science, August 2008
+
+{\bf Georgia Institute of Technology}, Atlanta, Georgia\\
+B.S., Computer Science, August 2003, \em High Honors\em \\
+B.S., Discrete Mathematics, August 2003, \em High Honors\em
+%{\em Department of Computer Engineering & Computer Science}
+%\vspace*{-.1in}
+%\begin{list1}
+%\item[] B.S., Computer Engineering, May, 2002
+%\end{list1}
+
+\section{\sc Professional Experience}
+{\bf NVIDIA Corporation}, Santa Clara, California\\
+{\em Senior Research Scientist} \hfill {\bf August 2008 - Current}\\
+\vspace{-.3cm}
+\begin{list2}
+\item Co-designed and developed Thrust, a high-level parallel algorithms library 
+\item Productized Thrust in the CUDA Toolkit for programming GPUs
+\item Created Cusp, a library for sparse matrix operations on CUDA
+\item Developed the first fully GPU-accelerated algebraic multigrid (AMG) solver
+\end{list2}
+
+
+{\bf NVIDIA Corporation}, Santa Clara, California\\
+{\em Research Intern} \hfill {\bf May 2007 - August 2007}\\
+\vspace{-.3cm}
+\begin{list2}
+\item Researched efficient methods for sparse matrix-vector multiplication on GPUs
+\item Resulting publications have \href{http://scholar.google.com/citations?user=BA-ae2MAAAAJ}{received hundreds of citations}
+\end{list2}
+
+{\bf University of Illinois Urbana-Champaign}, Urbana, Illinois\\
+{\em Teaching Assistant} \hfill {\bf 2003 - 2007}\\
+
+\section{\sc Honors and \\ Awards}
+{\bf Best Paper}
+ACM SIGGRAPH/Eurographics Symposium on Computer Animation, 2005
+
+{\bf Incomplete List of Teachers Ranked as Excellent} \\
+University of Illinois at Urbana-Champaign, Spring 2004
+
+
+\section{\sc Open-Source Projects}
+\href{http://thrust.googlecode.com}{{\bf Thrust} - Parallel Algorithms Library in C++}
+
+\vspace{-.15cm}
+\href{http://cusp-library.googlecode.com}{{\bf Cusp} - Generic Parallel Algorithms for Sparse Matrix and Graph Computations}
+
+\vspace{-.15cm}
+\href{http://pyamg.googlecode.com}{{\bf PyAMG} - Algebraic Multigrid Solvers in Python}
+
+\vspace{-.15cm}
+\href{http://pydec.googlecode.com}{{\bf PyDEC} - A Python Library for Discretization of Exterior Calculus}
+
+\vspace{-.15cm}
+\href{http://www.scipy.org}{{\bf SciPy} - Scientific Tools for Python} \\
+%Significant contributions to \texttt{scipy.sparse} module
+
+
+\section{\sc Selected Publications}
+{\bf Thrust: A Productivity-Oriented Library for CUDA} \\
+Nathan Bell and Jared Hoberock \\
+GPU Computing Gems (Jade Edition), October 2011
+
+\vspace{-.15cm}
+{\bf Exposing Fine-Grained Parallelism in Algebraic Multigrid Methods} \\
+Nathan Bell, Steven Dalton and Luke Olson \\
+NVIDIA Technical Report NVR-2011-002, June 2011
+
+\vspace{-.15cm}
+{\bf Implementing Sparse Matrix-Vector Multiplication on Throughput-Oriented Processors} \\
+Nathan Bell and Michael Garland \\
+Proceedings of Supercomputing '09, November 2009
+
+\vspace{-.15cm}
+{\bf Particle-Based Simulation of Granular Materials} \\
+Nathan Bell, Yizhou Yu and Peter J. Mucha \\
+ACM SIGGRAPH/ Eurographics Symposium on Computer Animation 2005, August 2005
+
+\end{resume}
+
+\end{document}
+
